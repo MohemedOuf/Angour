@@ -1,0 +1,500 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/* --------------------nav style---------------- */
+.nav-item{
+font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+.nav-item a
+{
+    color: black !important;
+    padding: 10px 15px !important;
+}
+.nav-item .active {
+    color: #f25454 !important ;
+}
+.nav-link{
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+.nav-link:hover{
+    color: #f25454 !important ;
+} 
+/* --------------------------------home---------------------- */
+.home-content{
+    position: relative;
+}
+.home-content .carousel-control-prev{
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding:  1rem 0 !important;
+}
+.home-content .carousel-control-next{
+    left: 0;
+    top: 7rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding:  1rem 0 !important;
+    font-size: 10px!important;
+    color: #f25454 !important;
+}
+.home-content .carousel-control-prev-icon{
+    border: 1px solid white;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    padding: 3px 10px 0 10px !important;
+}
+
+.home-content  .carousel-control-prev-icon ::after
+{
+content: "";
+height: 100%;
+width: 100%;
+background-color: white;
+opacity: 1;
+position: absolute;
+top: 0%;
+left: 100%;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+}
+
+.home-content  .carousel-control-prev-icon:hover ::after
+{
+    left: 110%;
+    background-color:#f25454;
+}
+
+
+.home-content .carousel-control-next-icon{
+    border: 1px solid white;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    font-size: 15px !important;
+    padding: 1.5rem !important;
+    position: relative;
+}
+
+.home-content .carousel-control-next-icon::after
+{
+content: "";
+height: 100%;
+width: 100%;
+background-color: white;
+opacity: 0.5;
+position: absolute;
+top: 0;
+left: -100%;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+}
+
+.home-content .carousel-control-next-icon:hover::after
+{
+    left: 0%;
+    background-color:#f25454;
+}
+
+@media screen and (max-width: 600px)  { 
+    .home-content .carousel-caption h1
+    {
+        font-size: 2rem!important;
+    }
+    }
+.home-content .carousel-caption{
+    position: absolute;
+    top: 40%;
+}
+.home-content .carousel-caption h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.slide-one{
+    background-image: url(../images/slideshow-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.slide-two{
+    background-image: url(../images/slideshow-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.slide-three{
+    background-image: url(../images/slideshow-3.jpg);
+    background-size: cover;
+    background-position: center center;
+} 
+.home-content .home-btn{
+    width:  26px ;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    z-index: 999 !important;
+}
+.home-content .home-btn a  {
+    position: relative;
+}
+.home-content .home-btn a  i{
+    font-size: .5rem;
+    -webkit-animation: moving  2s infinite ease-in-out ;
+            animation: moving  2s infinite ease-in-out ;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50% ,50%);
+        -ms-transform: translate(-50% ,50%);
+            transform: translate(-50% ,50%);
+}
+@-webkit-keyframes moving {
+    0% {
+        top: 6px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        top: 18px;
+        opacity: 0;
+    }
+
+    }
+@keyframes moving {
+    0% {
+        top: 6px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        top: 18px;
+        opacity: 0;
+    }
+
+    }
+
+/* -----------------------------------about---------------------------------------- */
+
+
+.sec-title h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    position: relative;
+    z-index: 99 !important;
+}
+.sec-title h3::after{
+    content: "A";
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+.sec-title h3::before{
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: .05rem;
+    background-color: black;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    top: 150%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.sec-title:hover h3::before{
+    width: 6rem;
+
+}
+
+.progress-bar{
+
+    background-color: #f25454 !important;
+}
+.prog-1{
+    width: 80%;
+}
+.prog-2{
+    width: 95%;
+}
+.prog-3{
+    width: 85%;
+}
+.prog-4{
+    width: 70%;
+}
+
+.about-content{
+    font-size: .85rem !important;
+}
+
+/* ------------------------------Our Team----------------------------- */
+.team-title h3::after{
+    content: "O";
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+.team-cover-img{
+    background-color: rgba(242, 84, 84,0.5);
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.team-cover-img a{
+    color: white;
+
+}
+.team-cover-img:hover{
+    opacity: 1;
+}
+.team-memeber-img img{
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.team-memeber-img:hover img{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.team-memeber h5{
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+}
+.team-memeber:hover h5 {
+    color: #f25454 !important;
+}
+/* -----------------------------services-------------------------------------- */
+.services-title  h3::after{
+    content: "S";
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+.services-item h5{
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+.services-item:hover h5{
+color: #f25454;
+}
+
+/* ---------------------client---------------------------- */
+.client-title h3::after{
+    content: "C";
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+/* ----------------------------------- */
+.client-content .carousel .carousel-indicators{
+    width: 100% !important;
+    position: static;
+    margin: 0;
+    background-color: transparent;
+    }
+.client-content .carousel .carousel-indicators button {
+        border-radius: 50%;
+        width: 100% !important;
+        height: 150px !important;
+    }
+
+.client-content .carousel-inner .carousel-item .carousel-caption {
+    position: static;
+    color: black !important;
+    }
+.client-content .carousel-inner .carousel-item .carousel-caption q{
+     font-size: 2rem;
+    }
+    
+       #btn-1{
+        background-image: url(../images/client-1.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+      #btn-2{
+        background-image: url(../images/client-2.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+     #btn-3{
+        background-image: url(../images/client-3.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+     #btn-4{
+        background-image: url(../images/client-4.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+    #btn-5{
+        background-image: url(../images/client-5.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+     #btn-6{
+        background-image: url(../images/client-6.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+      #btn-7{
+        background-image: url(../images/client-7.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+      #btn-8{
+        background-image: url(../images/client-8.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+    .client-content  #btn-9{
+        background-image: url(../images/client-9.png) !important;
+        background-size: cover;
+        background-position: center center ;
+    } 
+
+
+    .client-content-2 .carousel-indicators{
+        margin-top: 2rem ;
+        position: static;
+/* top: 100%; */
+    }
+    .client-content-2 .carousel-item img{ 
+        width: 25% !important;
+        border-radius: 50%;
+        /* position: static; */
+        margin: auto;
+        
+            }
+.client-content-2 .carousel-caption {
+    position: static;
+    width: 70%;
+    margin: auto;
+
+}
+.client-content-2 .carousel-caption q{
+font: 2em sans-serif;
+}
+/* -------------------------------------------------------------------------------- */
+.contact{
+    background-color: #fafafa;
+}
+.contact-title h3::after{
+    content: "C";
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+.contact-content h5 {
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+}
+.contact-content h5:hover{
+    color: #f25454;
+}
+/* --------------------------------------------- */
+.info{
+    
+    background-image: url(../images/dotted-map.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.info li{
+
+}
+.info ul li a{
+color: #fafafa;    
+text-decoration: none;
+-webkit-transition:  all 1s;
+-o-transition:  all 1s;
+transition:  all 1s;
+}
+.info ul li a:hover{
+color: #f25454 !important;     
+}
+.info h3 {
+    padding: .5rem 0rem;
+}
+.info .btn{
+background: none;
+}
+.info .btn:hover{
+    color: #f25454 !important;
+    border-color: #f25454 !important;
+}
+.info-btn i{
+    font-size: 3rem !important;
+    background-color: rgba(242, 84, 84,0.5) !important;
+}
+.info-btn:hover i{
+    background-color: #f25454 !important;
+}
+/* -------------------------------------------------------------- */
+footer{
+background-color: black;
+padding: 3rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem !important ;
+}
+footer a:hover{
+    color: #f25454;
+}
